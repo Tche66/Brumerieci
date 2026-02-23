@@ -8,68 +8,25 @@
   <meta name="google-site-verification" content="FHKEXJBLOYCW7PBAVKalTJ3Q3eqN6TXqbeGeR8a3JXg" />
   
   <!-- SEO Meta Tags -->
-  <title>Brumerie - Le commerce local sécurisé arrive à Abidjan | Pré-seed</title>
-  <meta name="description" content="MVP en développement • Incubé par FasterCapital • 15 vendeurs prêts • Levée pré-seed 150k$ ouverte. Rejoignez la révolution du commerce local en Côte d'Ivoire." />
-  <meta name="keywords" content="brumerie, marketplace, abidjan, côte d'ivoire, mobile money, commerce local, startup ci, investissement" />
+  <title>Brumerie - Infrastructure de confiance pour le commerce local | Pré-seed Abidjan</title>
+  <meta name="description" content="MVP en développement • Incubé par FasterCapital • 15 vendeurs prêts • Levée pré-seed 150k$ ouverte. Infrastructure de confiance hyperlocale intégrée au Mobile Money." />
+  <meta name="keywords" content="brumerie, marketplace, abidjan, côte d'ivoire, mobile money, cinetpay, commerce local, startup ci, investissement" />
   <meta name="author" content="Brumerie" />
   <meta name="robots" content="index, follow" />
-  <style>
-    /* Figma Screenshots Carousel */
-    .figma-carousel {
-      position: relative;
-      max-width: 900px;
-      margin: 0 auto;
-      overflow: hidden;
-      border-radius: 1rem;
-      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
-    }
-    
-    .carousel-track {
-      display: flex;
-      transition: transform 0.5s ease;
-    }
-    
-    .carousel-slide {
-      min-width: 100%;
-      flex-shrink: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 2rem 0;
-      background: #fdfdfd; 
-    }
-    
-    .carousel-slide img {
-      width: auto;
-      max-width: 320px;
-      height: auto;
-      display: block;
-     
-      border-radius: 2rem; 
-      border: 10px solid #1a1a1a; 
-      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
-    }
-
-    @media (max-width: 480px) {
-      .carousel-slide img {
-        max-width: 80%; 
-        border-width: 6px; 
-    }
-
-  <!-- Open Graph Meta Tags -->
+  
+  <!-- Open Graph -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Brumerie - Le commerce local sécurisé arrive à Abidjan" />
+  <meta property="og:title" content="Brumerie - Infrastructure de confiance pour le commerce local Abidjan" />
   <meta property="og:description" content="MVP en développement • Incubé par FasterCapital • Levée pré-seed ouverte 150k$" />
   <meta property="og:url" content="https://brumerie.ci/" />
   <meta property="og:site_name" content="Brumerie" />
   <meta property="og:locale" content="fr_FR" />
   
   <!-- Twitter Card -->
-  <meta na>me="twitter:card" content="summary_large_image" />
+  <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Brumerie - Commerce local sécurisé Abidjan" />
-  <meta name="twitter:description" content="MVP en développement • Incubé par FasterCapital" />
   
-  <!-- Geo Tags -->
+  <!-- Geo -->
   <meta name="geo.region" content="CI-AB" />
   <meta name="geo.placename" content="Abidjan" />
   
@@ -77,7 +34,7 @@
   <link rel="canonical" href="https://brumerie.ci/" />
   
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="images/logo.png" />
+  <link rel="icon" type="image/png" href="/images/logo.png" />
   
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -104,7 +61,6 @@
       --gray-800: #1f2937;
       --gray-900: #111827;
       --blue-600: #2563eb;
-      --gradient-hero: linear-gradient(135deg, #10b981 0%, #059669 100%);
     }
     
     html {
@@ -174,10 +130,11 @@
       cursor: pointer;
       border: none;
       font-size: 0.95rem;
+      display: inline-block;
     }
     
     .btn-primary {
-      background: var(--gradient-hero);
+      background: linear-gradient(135deg, #10b981 0%, #059669 100%);
       color: white;
       box-shadow: 0 4px 6px rgba(16, 185, 129, 0.2);
     }
@@ -197,7 +154,7 @@
       background: var(--gray-50);
     }
     
-    /* Hero Section */
+    /* Hero */
     .hero {
       margin-top: 80px;
       padding: 4rem 0 3rem;
@@ -216,7 +173,7 @@
       gap: 0.5rem;
       padding: 0.5rem 1.25rem;
       background: white;
-      border: 2px solid var(--emerald-200);
+      border: 2px solid #d1fae5;
       border-radius: 999px;
       font-size: 0.9rem;
       font-weight: 600;
@@ -233,7 +190,7 @@
     }
     
     .hero h1 .gradient-text {
-      background: var(--gradient-hero);
+      background: linear-gradient(135deg, #10b981 0%, #059669 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
@@ -280,30 +237,100 @@
       color: var(--gray-600);
       font-weight: 500;
     }
-
-    /* Figma Screenshots Carousel */
-    .figma-carousel {
-      position: relative;
-      max-width: 900px;
+    
+    /* Section */
+    section {
+      padding: 5rem 0;
+    }
+    
+    .section-header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    
+    .section-badge {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background: #f0fdf4;
+      color: var(--emerald-700);
+      border-radius: 999px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+    
+    .section-title {
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: var(--gray-900);
+      margin-bottom: 1rem;
+    }
+    
+    .section-description {
+      font-size: 1.1rem;
+      color: var(--gray-600);
+      max-width: 700px;
       margin: 0 auto;
+      line-height: 1.7;
+    }
+    
+    /* Phone Mockup Carousel */
+    .phone-carousel-wrapper {
+      max-width: 400px;
+      margin: 0 auto;
+      position: relative;
+    }
+    
+    .phone-mockup {
+      position: relative;
+      width: 100%;
+      max-width: 340px;
+      margin: 0 auto;
+      padding: 20px 12px;
+      background: #1f2937;
+      border-radius: 50px;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.3), inset 0 0 0 2px rgba(255,255,255,0.1);
+    }
+    
+    .phone-mockup::before {
+      content: '';
+      position: absolute;
+      top: 35px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 140px;
+      height: 30px;
+      background: #1f2937;
+      border-radius: 0 0 20px 20px;
+      z-index: 2;
+    }
+    
+    .phone-screen {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 9/19.5;
+      background: white;
+      border-radius: 35px;
       overflow: hidden;
-      border-radius: 1rem;
-      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+      box-shadow: 0 0 0 1px rgba(0,0,0,0.1);
     }
     
     .carousel-track {
       display: flex;
       transition: transform 0.5s ease;
+      height: 100%;
     }
     
     .carousel-slide {
       min-width: 100%;
       flex-shrink: 0;
+      height: 100%;
     }
     
     .carousel-slide img {
       width: 100%;
-      height: auto;
+      height: 100%;
+      object-fit: cover;
       display: block;
     }
     
@@ -311,7 +338,7 @@
       display: flex;
       justify-content: center;
       gap: 0.5rem;
-      margin-top: 1.5rem;
+      margin-top: 2rem;
     }
     
     .dot {
@@ -328,16 +355,16 @@
       width: 24px;
       border-radius: 5px;
     }
-
-    /* Problem Section */
-    .problem-grid {
+    
+    /* Problem/Solution Grid */
+    .card-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 2rem;
       margin-top: 2rem;
     }
     
-    .problem-card {
+    .card {
       background: white;
       border: 2px solid var(--gray-200);
       border-radius: 1rem;
@@ -346,63 +373,69 @@
       transition: all 0.3s;
     }
     
-    .problem-card:hover {
+    .card:hover {
       border-color: var(--emerald-600);
       transform: translateY(-5px);
       box-shadow: 0 10px 30px rgba(16, 185, 129, 0.1);
     }
     
-    .problem-icon {
+    .card-icon {
       font-size: 2.5rem;
       margin-bottom: 1rem;
     }
     
-    .problem-card h3 {
+    .card h3 {
       font-size: 1.2rem;
       font-weight: 700;
       margin-bottom: 0.5rem;
       color: var(--gray-900);
     }
     
-    .problem-card p {
+    .card p {
       color: var(--gray-600);
       font-size: 0.95rem;
+      line-height: 1.6;
     }
     
-    /* Solution Grid */
-    .solution-grid {
+    /* Advantage Cards */
+    .advantage-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 2rem;
       margin-top: 3rem;
     }
     
-    .solution-card {
-      background: linear-gradient(135deg, var(--emerald-50) 0%, white 100%);
-      border: 2px solid var(--emerald-200);
-      border-radius: 1rem;
-      padding: 2rem;
-      text-align: center;
+    .advantage-card {
+      background: linear-gradient(135deg, #f0fdf4 0%, white 100%);
+      border: 2px solid #d1fae5;
+      border-radius: 1.5rem;
+      padding: 2.5rem;
+      text-align: left;
     }
     
-    .solution-icon {
+    .advantage-icon {
       width: 60px;
       height: 60px;
-      background: var(--gradient-hero);
+      background: linear-gradient(135deg, #10b981 0%, #059669 100%);
       border-radius: 1rem;
       display: flex;
       align-items: center;
       justify-content: center;
       font-size: 1.8rem;
-      margin: 0 auto 1rem;
+      margin-bottom: 1.5rem;
       color: white;
     }
     
-    .solution-card h3 {
-      font-size: 1.1rem;
+    .advantage-card h3 {
+      font-size: 1.3rem;
       font-weight: 700;
-      margin-bottom: 0.5rem;
+      margin-bottom: 1rem;
       color: var(--gray-900);
+    }
+    
+    .advantage-card p {
+      color: var(--gray-600);
+      line-height: 1.7;
     }
     
     /* Roadmap */
@@ -418,7 +451,7 @@
       top: 0;
       bottom: 0;
       width: 3px;
-      background: var(--emerald-200);
+      background: #d1fae5;
     }
     
     .timeline-item {
@@ -488,6 +521,52 @@
       font-weight: 700;
     }
     
+    /* Dual Funnel Separator */
+    .funnel-separator {
+      background: linear-gradient(135deg, #f0fdf4 0%, white 100%);
+      padding: 3rem 0;
+      margin: 3rem 0;
+      text-align: center;
+    }
+    
+    .funnel-title {
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--gray-900);
+      margin-bottom: 2rem;
+    }
+    
+    .funnel-options {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+    
+    .funnel-option {
+      flex: 1;
+      max-width: 400px;
+      min-width: 280px;
+      background: white;
+      border: 3px solid var(--gray-200);
+      border-radius: 1rem;
+      padding: 2rem;
+      transition: all 0.3s;
+      cursor: pointer;
+    }
+    
+    .funnel-option:hover {
+      border-color: var(--emerald-600);
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(16, 185, 129, 0.15);
+    }
+    
+    .funnel-option h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: var(--gray-900);
+    }
+    
     /* Investment Section */
     .investment-section {
       background: linear-gradient(135deg, var(--gray-900) 0%, #1e293b 100%);
@@ -496,7 +575,7 @@
     
     .investment-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 2rem;
       margin: 3rem 0;
     }
@@ -522,44 +601,43 @@
     .investment-card .big-number {
       font-size: 2.5rem;
       font-weight: 800;
-      color: var(--emerald-400);
+      color: #6ee7b7;
     }
     
-    .use-of-funds {
+    .acquisition-strategy {
       background: rgba(255, 255, 255, 0.05);
       border-radius: 1rem;
       padding: 2rem;
       margin: 2rem 0;
+      text-align: left;
     }
     
-    .fund-item {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1rem 0;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    .acquisition-strategy h3 {
+      font-size: 1.3rem;
+      margin-bottom: 1.5rem;
     }
     
-    .fund-item:last-child {
-      border-bottom: none;
+    .acquisition-strategy ul {
+      list-style: none;
+      padding: 0;
     }
     
-    .fund-bar {
-      flex: 1;
-      height: 10px;
-      background: rgba(255, 255, 255, 0.1);
-      border-radius: 5px;
-      margin: 0 1rem;
-      overflow: hidden;
+    .acquisition-strategy li {
+      padding: 0.75rem 0;
+      padding-left: 2rem;
+      position: relative;
+      color: rgba(255, 255, 255, 0.9);
     }
     
-    .fund-progress {
-      height: 100%;
-      background: var(--emerald-500);
-      border-radius: 5px;
+    .acquisition-strategy li:before {
+      content: "→";
+      position: absolute;
+      left: 0;
+      color: #6ee7b7;
+      font-weight: 700;
     }
     
-    /* Form Section */
+    /* Form */
     .form-container {
       max-width: 600px;
       margin: 0 auto;
@@ -602,7 +680,7 @@
       min-height: 120px;
     }
     
-    /* Team Section */
+    /* Team */
     .team-card {
       background: white;
       border: 2px solid var(--gray-200);
@@ -616,7 +694,7 @@
     .team-avatar {
       width: 120px;
       height: 120px;
-      background: var(--gradient-hero);
+      background: linear-gradient(135deg, #10b981 0%, #059669 100%);
       border-radius: 50%;
       margin: 0 auto 1.5rem;
       display: flex;
@@ -699,7 +777,7 @@
     }
     
     .footer-links a:hover {
-      color: var(--emerald-400);
+      color: #6ee7b7;
     }
     
     .social-links {
@@ -759,6 +837,10 @@
         padding: 0.625rem 1.25rem;
         font-size: 0.9rem;
       }
+      
+      .phone-mockup {
+        max-width: 280px;
+      }
     }
   </style>
 </head>
@@ -768,7 +850,7 @@
     <div class="container">
       <div class="header-content">
         <div class="logo-section">
-          <img src="images/logo.png" alt="Brumerie Logo" class="logo">
+          <img src="/images/logo.png" alt="Brumerie Logo" class="logo">
           <span class="logo-text">Brumerie</span>
         </div>
         <div class="header-cta">
@@ -779,7 +861,7 @@
     </div>
   </header>
 
-  <!-- Hero Section -->
+  <!-- Hero -->
   <section class="hero">
     <div class="container">
       <div class="hero-content">
@@ -793,16 +875,16 @@
         </h1>
         
         <p class="hero-subtitle">
-          Brumerie prépare sa plateforme de social commerce pour révolutionner<br>
-          les transactions locales en Côte d'Ivoire. Rejoignez-nous.
+          Infrastructure de confiance hyperlocale intégrée au Mobile Money.<br>
+          Structurée quartier par quartier pour créer une communauté de commerce local sécurisé.
         </p>
         
         <div class="hero-ctas">
           <a href="#early-adopters" class="btn btn-primary" style="font-size: 1.1rem; padding: 1rem 2rem;">
-            Rejoindre le programme pilote
+            👥 Rejoindre le programme pilote
           </a>
           <a href="#investisseurs" class="btn btn-secondary" style="font-size: 1.1rem; padding: 1rem 2rem;">
-            Opportunité d'investissement
+            💼 Opportunité d'investissement
           </a>
         </div>
         
@@ -831,24 +913,28 @@
         <span class="section-badge">✨ TRACTION VALIDÉE</span>
         <h2 class="section-title">Prototype complet & vendeurs prêts</h2>
         <p class="section-description">
-          Nous avons terminé notre prototype Figma et recruté 15 vendeurs engagés à Abidjan pour tester le MVP dès son lancement.
+          Prototype Figma terminé (janvier 2026) et 15 vendeurs engagés à Abidjan pour tester le MVP dès son lancement.
         </p>
       </div>
       
-      <!-- Figma Carousel -->
-      <div class="figma-carousel">
-        <div class="carousel-track" id="carouselTrack">
-          <div class="carousel-slide">
-            <img src="images/figma1.jpg" alt="Brumerie Prototype - Accueil">
-          </div>
-          <div class="carousel-slide">
-            <img src="images/figma2.jpg" alt="Brumerie Prototype - Produit">
-          </div>
-          <div class="carousel-slide">
-            <img src="images/figma3.jpg" alt="Brumerie Prototype - Profil">
-          </div>
-          <div class="carousel-slide">
-            <img src="images/figma4.jpg" alt="Brumerie Prototype - Dashboard">
+      <!-- Phone Mockup Carousel -->
+      <div class="phone-carousel-wrapper">
+        <div class="phone-mockup">
+          <div class="phone-screen">
+            <div class="carousel-track" id="carouselTrack">
+              <div class="carousel-slide">
+                <img src="/images/figma1.jpg" alt="Brumerie Prototype - Accueil">
+              </div>
+              <div class="carousel-slide">
+                <img src="/images/figma2.jpg" alt="Brumerie Prototype - Produit">
+              </div>
+              <div class="carousel-slide">
+                <img src="/images/figma3.jpg" alt="Brumerie Prototype - Profil">
+              </div>
+              <div class="carousel-slide">
+                <img src="/images/figma4.jpg" alt="Brumerie Prototype - Dashboard">
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -870,23 +956,23 @@
         <h2 class="section-title">Pourquoi Brumerie existe</h2>
       </div>
       
-      <div class="problem-grid">
-        <div class="problem-card">
-          <div class="problem-icon">⚡</div>
+      <div class="card-grid">
+        <div class="card">
+          <div class="card-icon">⚡</div>
           <h3>Commerce informel</h3>
-          <p>70% des transactions se font via WhatsApp et Facebook sans structure ni protection</p>
+          <p>La majorité des transactions se font via WhatsApp et Facebook sans structure ni protection</p>
         </div>
         
-        <div class="problem-card">
-          <div class="problem-icon">🚫</div>
+        <div class="card">
+          <div class="card-icon">🚫</div>
           <h3>Manque de confiance</h3>
-          <p>Arnaques fréquentes, vendeurs non vérifiés, aucun système de notation fiable</p>
+          <p>Arnaques fréquentes, vendeurs non vérifiés, aucun système de notation fiable entre voisins</p>
         </div>
         
-        <div class="problem-card">
-          <div class="problem-icon">💸</div>
+        <div class="card">
+          <div class="card-icon">💸</div>
           <h3>Paiements risqués</h3>
-          <p>Aucune protection escrow, transactions directes sans garantie de livraison</p>
+          <p>Aucune protection des transactions, paiements directs sans garantie de livraison</p>
         </div>
       </div>
     </div>
@@ -897,41 +983,41 @@
     <div class="container">
       <div class="section-header">
         <span class="section-badge">✅ NOTRE SOLUTION</span>
-        <h2 class="section-title">Une plateforme complète et sécurisée</h2>
+        <h2 class="section-title">Une nouvelle infrastructure de confiance</h2>
         <p class="section-description">
-          Brumerie proposera une expérience de commerce local structurée, sécurisée et accessible à tous.
+          Brumerie proposera une expérience de commerce local structurée, sécurisée et accessible à tous via Mobile Money.
         </p>
       </div>
       
-      <div class="solution-grid">
-        <div class="solution-card">
-          <div class="solution-icon">🛡️</div>
-          <h3>Paiement sécurisé</h3>
-          <p>Système escrow avec Mobile Money (Wave, MTN, Orange, Moov)</p>
+      <div class="card-grid">
+        <div class="card" style="border-color: var(--emerald-600);">
+          <div class="card-icon">🛡️</div>
+          <h3>Protection via CinetPay</h3>
+          <p>Partenariat avec agrégateur de paiement certifié pour sécuriser les transactions Mobile Money</p>
         </div>
         
-        <div class="solution-card">
-          <div class="solution-icon">✓</div>
+        <div class="card" style="border-color: var(--emerald-600);">
+          <div class="card-icon">✓</div>
           <h3>Vendeurs vérifiés</h3>
-          <p>Profils authentifiés avec système de notation communautaire transparent</p>
+          <p>Profils authentifiés avec système de notation communautaire transparent par quartier</p>
         </div>
         
-        <div class="solution-card">
-          <div class="solution-icon">📍</div>
-          <h3>Marketplace locale</h3>
-          <p>Commerce de proximité structuré quartier par quartier</p>
+        <div class="card" style="border-color: var(--emerald-600);">
+          <div class="card-icon">📍</div>
+          <h3>Hyperlocal first</h3>
+          <p>Commerce de proximité structuré quartier par quartier avec effet réseau communautaire</p>
         </div>
         
-        <div class="solution-card">
-          <div class="solution-icon">🎥</div>
+        <div class="card" style="border-color: var(--emerald-600);">
+          <div class="card-icon">🎥</div>
           <h3>Live commerce</h3>
-          <p>Interactions en direct avec les vendeurs locaux</p>
+          <p>Interactions en direct avec les vendeurs locaux pour créer confiance et transparence</p>
         </div>
         
-        <div class="solution-card">
-          <div class="solution-icon">⭐</div>
-          <h3>Système d'évaluation</h3>
-          <p>Avis et notations fiables pour chaque transaction</p>
+        <div class="card" style="border-color: var(--emerald-600);">
+          <div class="card-icon">⭐</div>
+          <h3>Réputation par quartier</h3>
+          <p>Système d'évaluation locale : badges pionniers, top vendeur par zone</p>
         </div>
       </div>
     </div>
@@ -945,24 +1031,68 @@
         <h2 class="section-title">Pourquoi Abidjan, pourquoi maintenant</h2>
       </div>
       
-      <div class="problem-grid">
-        <div class="problem-card" style="border-color: var(--emerald-600);">
-          <div class="problem-icon">📈</div>
-          <h3>Marché en explosion</h3>
-          <p><strong>Adoption massive</strong> du Mobile Money en Côte d’Ivoire • Commerce social = <strong>2 milliards $</strong> en Afrique de l'Ouest</p>
+      <div class="card-grid">
+        <div class="card" style="border-color: var(--emerald-600);">
+          <div class="card-icon">📈</div>
+          <h3>Marché en croissance</h3>
+          <p>Adoption massive du Mobile Money en Côte d'Ivoire • Commerce social en forte croissance régionale</p>
         </div>
         
-        <div class="problem-card" style="border-color: var(--emerald-600);">
-          <div class="problem-icon">🎯</div>
+        <div class="card" style="border-color: var(--emerald-600);">
+          <div class="card-icon">🎯</div>
           <h3>Hub test idéal</h3>
-          <p><strong>Abidjan : 4M habitants</strong>, forte pénétration smartphone, réglementation Mobile Money stabilisée</p>
+          <p>Abidjan : 4M d'habitants, hub économique sous-équipé en infrastructures de confiance pour le commerce local</p>
         </div>
         
-        <div class="problem-card" style="border-color: var(--emerald-600);">
-          <div class="problem-icon">🚀</div>
+        <div class="card" style="border-color: var(--emerald-600);">
+          <div class="card-icon">🚀</div>
           <h3>Traction validée</h3>
-          <p><strong>15 vendeurs</strong> en moins de 30 jours • Sélectionnés par <strong>FasterCapital</strong> • Prototype terminé</p>
+          <p>15 vendeurs recrutés (février 2026) • Incubation FasterCapital (novembre 2025) • Prototype terminé</p>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Avantage Stratégique CORE -->
+  <section style="background: linear-gradient(135deg, #f0fdf4 0%, #ecfdf5 100%);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">🏆 NOTRE AVANTAGE DÉFENDABLE</span>
+        <h2 class="section-title">Pourquoi nous allons réussir</h2>
+        <p class="section-description">
+          Une infrastructure de confiance hyperlocale intégrée au Mobile Money
+        </p>
+      </div>
+      
+      <div class="advantage-grid">
+        <div class="advantage-card">
+          <div class="advantage-icon">🔒</div>
+          <h3>Protection Mobile Money native</h3>
+          <p>
+            Partenariat avec <strong>CinetPay</strong> (agrégateur certifié) pour sécuriser les transactions via Wave, MTN, Orange, Moov. 
+            <br><br>
+            Système de blocage/libération des fonds adapté aux usages locaux, sans nécessiter de licence PSP directe.
+          </p>
+        </div>
+        
+        <div class="advantage-card">
+          <div class="advantage-icon">📍</div>
+          <h3>Hyperlocal structuré quartier par quartier</h3>
+          <p>
+            Structuration communautaire créant un <strong>effet réseau local</strong> difficile à reproduire à grande échelle.
+            <br><br>
+            Réputation par zone, badges pionniers, confiance entre voisins = barrière sociale à l'entrée.
+          </p>
+        </div>
+      </div>
+      
+      <div style="text-align: center; margin-top: 3rem; padding: 2rem; background: white; border-radius: 1rem; border: 2px solid var(--emerald-600);">
+        <p style="font-size: 1.2rem; color: var(--gray-800); font-weight: 600;">
+          🎯 Cette combinaison = <strong style="color: var(--emerald-600);">barrière structurelle à l'entrée</strong>
+        </p>
+        <p style="color: var(--gray-600); margin-top: 0.5rem;">
+          Pas une simple marketplace, mais une infrastructure de confiance locale
+        </p>
       </div>
     </div>
   </section>
@@ -984,10 +1114,10 @@
         <div class="timeline-item">
           <div class="timeline-marker completed">✓</div>
           <div class="timeline-content">
-            <div class="timeline-quarter">Q1 2026 • Actuel</div>
+            <div class="timeline-quarter">Q4 2025 / Q1 2026 • Accompli</div>
             <h3>Fondation & Validation</h3>
             <ul class="timeline-list">
-              <li>Incubation FasterCapital confirmée (Avril 2025)</li>
+              <li>Incubation FasterCapital confirmée (Novembre 2025)</li>
               <li>Prototype Figma complet (Janvier 2026)</li>
               <li>15 vendeurs pilotes recrutés (Février 2026)</li>
               <li>Levée pré-seed lancée</li>
@@ -1002,8 +1132,8 @@
             <h3>Développement MVP</h3>
             <ul class="timeline-list">
               <li>Développement technique complet</li>
+              <li>Partenariat CinetPay signé</li>
               <li>Tests utilisateurs avec 20+ vendeurs</li>
-              <li>Partenariats Mobile Money signés</li>
               <li>Lancement MVP beta (Avril 2026)</li>
             </ul>
           </div>
@@ -1040,6 +1170,23 @@
     </div>
   </section>
 
+  <!-- Dual Funnel Separator -->
+  <div class="funnel-separator">
+    <div class="container">
+      <h2 class="funnel-title">Qui êtes-vous ?</h2>
+      <div class="funnel-options">
+        <a href="#early-adopters" class="funnel-option">
+          <h3>👥 Commerçant / Acheteur</h3>
+          <p>Rejoignez le programme pilote et soyez parmi les premiers utilisateurs</p>
+        </a>
+        <a href="#investisseurs" class="funnel-option">
+          <h3>💼 Investisseur</h3>
+          <p>Investissez dans la première infrastructure de confiance locale en CI</p>
+        </a>
+      </div>
+    </div>
+  </div>
+
   <!-- Investisseurs -->
   <section id="investisseurs" class="investment-section">
     <div class="container">
@@ -1047,8 +1194,8 @@
         <span class="section-badge" style="background: rgba(255,255,255,0.2); color: white;">💼 OPPORTUNITÉ D'INVESTISSEMENT</span>
         <h2 class="section-title" style="color: white;">Round pré-seed ouvert</h2>
         <p class="section-description" style="color: rgba(255,255,255,0.8);">
-          Investissez dans Une nouvelle plateforme de commerce local sécurisé
-        </p
+          Investissez dans une nouvelle infrastructure de confiance pour le commerce local en Côte d'Ivoire
+        </p>
       </div>
       
       <div class="investment-grid">
@@ -1073,47 +1220,54 @@
         </div>
       </div>
       
-      <div class="use-of-funds">
-        <h3 style="text-align: center; margin-bottom: 2rem; font-size: 1.5rem;">🎯 Utilisation des fonds</h3>
-        
-        <div class="fund-item">
-          <span style="min-width: 200px;"><strong>Développement MVP</strong></span>
-          <div class="fund-bar">
-            <div class="fund-progress" style="width: 60%;"></div>
+      <div style="background: rgba(255, 255, 255, 0.05); border-radius: 1rem; padding: 2rem; margin: 2rem 0;">
+        <h3 style="text-align: center; margin-bottom: 1.5rem; font-size: 1.5rem;">🎯 Utilisation des fonds</h3>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
+          <div>
+            <p style="margin-bottom: 0.5rem;"><strong>60%</strong> - Développement MVP</p>
+            <div style="height: 8px; background: rgba(255,255,255,0.1); border-radius: 4px; overflow: hidden;">
+              <div style="width: 60%; height: 100%; background: #6ee7b7;"></div>
+            </div>
           </div>
-          <span style="min-width: 60px; text-align: right;"><strong>60%</strong></span>
-        </div>
-        
-        <div class="fund-item">
-          <span style="min-width: 200px;"><strong>Marketing & Acquisition</strong></span>
-          <div class="fund-bar">
-            <div class="fund-progress" style="width: 25%;"></div>
+          <div>
+            <p style="margin-bottom: 0.5rem;"><strong>25%</strong> - Marketing & Acquisition</p>
+            <div style="height: 8px; background: rgba(255,255,255,0.1); border-radius: 4px; overflow: hidden;">
+              <div style="width: 25%; height: 100%; background: #6ee7b7;"></div>
+            </div>
           </div>
-          <span style="min-width: 60px; text-align: right;"><strong>25%</strong></span>
-        </div>
-        
-        <div class="fund-item">
-          <span style="min-width: 200px;"><strong>Opérations & Légal</strong></span>
-          <div class="fund-bar">
-            <div class="fund-progress" style="width: 15%;"></div>
+          <div>
+            <p style="margin-bottom: 0.5rem;"><strong>15%</strong> - Opérations & Légal</p>
+            <div style="height: 8px; background: rgba(255,255,255,0.1); border-radius: 4px; overflow: hidden;">
+              <div style="width: 15%; height: 100%; background: #6ee7b7;"></div>
+            </div>
           </div>
-          <span style="min-width: 60px; text-align: right;"><strong>15%</strong></span>
         </div>
       </div>
       
+      <div class="acquisition-strategy">
+        <h3>📈 Stratégie d'acquisition (12 mois)</h3>
+        <ul>
+          <li>Recrutement vendeur quartier par quartier à Abidjan</li>
+          <li>Marketing communautaire local (bouche-à-oreille)</li>
+          <li>Partenariats associations commerçants locaux</li>
+          <li>Activation micro-influenceurs par zone</li>
+          <li>Events physiques dans quartiers cibles</li>
+        </ul>
+      </div>
+      
       <div style="text-align: center; margin-top: 3rem;">
-        <h3 style="margin-bottom: 2rem; font-size: 1.5rem;">📈 Objectifs 12 mois</h3>
+        <h3 style="margin-bottom: 2rem; font-size: 1.5rem;">🎯 Objectifs 12 mois</h3>
         <div class="stats-row" style="border: none;">
           <div class="stat-item">
-            <span class="stat-number" style="color: var(--emerald-400);">2000</span>
+            <span class="stat-number" style="color: #6ee7b7;">2000</span>
             <span class="stat-label" style="color: white;">Utilisateurs actifs</span>
           </div>
           <div class="stat-item">
-            <span class="stat-number" style="color: var(--emerald-400);">80</span>
+            <span class="stat-number" style="color: #6ee7b7;">80</span>
             <span class="stat-label" style="color: white;">Vendeurs vérifiés</span>
           </div>
           <div class="stat-item">
-            <span class="stat-number" style="color: var(--emerald-400);">10</span>
+            <span class="stat-number" style="color: #6ee7b7;">10</span>
             <span class="stat-label" style="color: white;">Quartiers couverts</span>
           </div>
         </div>
@@ -1183,7 +1337,7 @@
         <span class="section-badge">🌟 PROGRAMME PILOTE</span>
         <h2 class="section-title">Rejoignez les premiers vendeurs</h2>
         <p class="section-description">
-          Inscrivez-vous pour faire partie des premiers utilisateurs de Brumerie et bénéficiez d'un statut prioritaire
+          Soyez parmi les premiers à tester Brumerie et bénéficiez d'un statut prioritaire dans votre quartier
         </p>
       </div>
       
@@ -1203,7 +1357,7 @@
         
         <div class="form-group">
           <label>Quartier Abidjan *</label>
-          <input type="text" name="quartier" required placeholder="Ex: Cocody, Adjamé, Yopougon...">
+          <input type="text" name="quartier" required placeholder="Ex: Cocody, Adjamé, Yopougon, Plateau...">
         </div>
         
         <div class="form-group">
@@ -1245,7 +1399,7 @@
     </div>
   </section>
 
-  <!-- Fondateur -->
+  <!-- Fondateur + Équipe -->
   <section style="background: var(--gray-50);">
     <div class="container">
       <div class="section-header">
@@ -1269,57 +1423,30 @@
         </a>
         
         <div style="margin-top: 2rem; padding-top: 2rem; border-top: 2px solid var(--gray-200);">
-          <h4 style="font-size: 1.1rem; margin-bottom: 1rem;">Advisors & Soutiens</h4>
-          <div style="display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap;">
-            <a href="https://fastercapital.com" target="_blank" style="text-decoration: none; color: var(--emerald-600); font-weight: 600;">
-              🚀 FasterCapital
-            </a>
-            <a href="https://www.crunchbase.com/organization/brumerie" target="_blank" style="text-decoration: none; color: var(--blue-600); font-weight: 600;">
-              📊 Crunchbase
-            </a>
+          <h4 style="font-size: 1.1rem; margin-bottom: 1.5rem; color: var(--gray-800);">🎯 Équipe & Soutiens</h4>
+          <div style="display: flex; flex-direction: column; gap: 1rem; text-align: left;">
+            <div style="display: flex; align-items: center; gap: 0.75rem;">
+              <span style="font-size: 1.5rem;">🔧</span>
+              <div>
+                <p style="font-weight: 600; color: var(--gray-900);">CTO en cours de recrutement</p>
+                <p style="font-size: 0.9rem; color: var(--gray-600);">Profil tech senior Mobile Money requis</p>
+              </div>
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.75rem;">
+              <span style="font-size: 1.5rem;">🚀</span>
+              <div>
+                <p style="font-weight: 600; color: var(--gray-900);">FasterCapital</p>
+                <p style="font-size: 0.9rem; color: var(--gray-600);">Programme Raise Capital • Advisory technique</p>
+              </div>
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.75rem;">
+              <span style="font-size: 1.5rem;">💳</span>
+              <div>
+                <p style="font-weight: 600; color: var(--gray-900);">CinetPay (en discussion)</p>
+                <p style="font-size: 0.9rem; color: var(--gray-600);">Partenaire paiement Mobile Money sécurisé</p>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Avantage Compétitif -->
-  <section>
-    <div class="container">
-      <div class="section-header">
-        <span class="section-badge">🏆 NOTRE AVANTAGE</span>
-        <h2 class="section-title">Pourquoi nous allons réussir</h2>
-      </div>
-      
-      <div class="solution-grid">
-        <div class="solution-card">
-          <div class="solution-icon">🎯</div>
-          <h3>Hyper-local first</h3>
-          <p>Focus Abidjan, pas une plateforme africaine générique. Expansion calculée quartier par quartier.</p>
-        </div>
-        
-        <div class="solution-card">
-          <div class="solution-icon">💳</div>
-          <h3>Mobile Money natif</h3>
-          <p>Intégration Adapté aux usages locaux.</p>
-        </div>
-        
-        <div class="solution-card">
-          <div class="solution-icon">🤝</div>
-          <h3>Communauté au cœur</h3>
-          <p>Live commerce + profils vérifiés = confiance réelle entre voisins.</p>
-        </div>
-        
-        <div class="solution-card">
-          <div class="solution-icon">⚡</div>
-          <h3>Équipe exécutante</h3>
-          <p>Fondateur local, comprend les enjeux, passion pour le commerce africain.</p>
-        </div>
-        
-        <div class="solution-card">
-          <div class="solution-icon">🚀</div>
-          <h3>Soutien FasterCapital</h3>
-          <p>Accélération, mentorat, et réseau investisseurs international.</p>
         </div>
       </div>
     </div>
@@ -1330,9 +1457,9 @@
     <div class="container">
       <div class="footer-content">
         <div class="footer-section">
-          <img src="images/logo.png" alt="Brumerie" style="height: 40px; margin-bottom: 1rem;">
+          <img src="/images/logo.png" alt="Brumerie" style="height: 40px; margin-bottom: 1rem;">
           <p style="color: rgba(255,255,255,0.7); margin-bottom: 1rem;">
-            Le commerce local sécurisé arrive à Abidjan.
+            Infrastructure de confiance pour le commerce local à Abidjan.
           </p>
           <div class="social-links">
             <a href="https://www.linkedin.com/company/brumerie/" target="_blank" class="social-link" aria-label="LinkedIn">

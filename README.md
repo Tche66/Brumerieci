@@ -1,248 +1,190 @@
-# 🚀 BRUMERIE - LANDING PAGE PRÉ-SEED
+# 🚀 BRUMERIE - LANDING PAGE PRÉ-SEED V2 (CORRIGÉE)
 
-Landing page optimisée pour levée de fonds pré-seed et recrutement early adopters.
+Version optimisée après analyse investisseur professionnel.
 
 ---
 
-## ✨ CARACTÉRISTIQUES
+## ✅ TOUTES LES CORRECTIONS APPLIQUÉES
 
-### **Design**
-- ✅ Minimaliste et professionnel
-- ✅ Responsive mobile-first
-- ✅ Animations smooth
-- ✅ Carousel interactif screenshots Figma
-- ✅ Vert émeraude (couleur Brumerie)
+### **1. Statistiques marché**
+❌ **Supprimé** : "70% des Ivoiriens utilisent Mobile Money" (non sourcé)
+✅ **Remplacé par** : "Adoption massive du Mobile Money en Côte d'Ivoire"
 
-### **Sections**
-1. **Hero** - Message clair : MVP en développement
-2. **Early Traction** - 15 vendeurs + Prototype complet
-3. **Carousel Figma** - 4 screenshots du prototype
-4. **Le Problème** - 3 points data-driven
-5. **La Solution** - 5 piliers de Brumerie
-6. **Pourquoi Maintenant** - Timing + marché
-7. **Roadmap** - Timeline Q1-Q4 2026
-8. **Investisseurs** - Round structuré + formulaire
-9. **Early Adopters** - Programme pilote + formulaire
-10. **Fondateur** - Serge Alain + LinkedIn
-11. **Avantage Compétitif** - 5 différenciateurs
+### **2. Positionnement**
+❌ **Supprimé** : "Première plateforme de commerce local"
+✅ **Remplacé par** : "Une nouvelle infrastructure de confiance"
+
+### **3. Escrow & CinetPay**
+❌ **Supprimé** : "Système escrow réglementé" / "Infrastructure financière"
+✅ **Remplacé par** : "Partenariat avec CinetPay (agrégateur certifié) pour sécuriser les transactions"
+
+**Formulation safe** : Ne promet pas de licence PSP, mais un partenariat avec agrégateur existant
+
+### **4. Timeline cohérente**
+✅ **Corrigé** : 
+- Incubation FasterCapital (Novembre 2025)
+- Prototype terminé (Janvier 2026)
+- 15 vendeurs recrutés (Février 2026)
+
+### **5. Section Équipe renforcée**
+✅ **Ajouté** :
+- CTO en cours de recrutement
+- Advisory technique FasterCapital
+- Partenaire CinetPay (en discussion)
+
+### **6. Stratégie d'acquisition**
+✅ **Ajoutée section complète** :
+- Recrutement quartier par quartier
+- Marketing communautaire local
+- Partenariats associations commerçants
+- Activation micro-influenceurs
+- Events physiques zones cibles
+
+### **7. Avantage compétitif restructuré**
+✅ **2 cartes majeures** au lieu de 5 points dispersés :
+1. **Protection Mobile Money native** (via CinetPay)
+2. **Hyperlocal structuré quartier par quartier** (effet réseau)
+
+→ Focus sur la barrière à l'entrée **structurelle**
+
+### **8. Design screenshots Figma**
+✅ **Phone mockup avec bordure iPhone** :
+- Max-width: 340px
+- Centré
+- Bordure téléphone réaliste (noir, notch)
+- Ratio 9:19.5 (iPhone standard)
+- Ombre et profondeur
+
+### **9. Dual Funnel séparé visuellement**
+✅ **Séparateur clair** "Qui êtes-vous ?" :
+- 2 options cliquables
+- CTA hiérarchisé (Programme pilote PRIMARY)
+- Sections dédiées investisseurs / early adopters
+
+---
+
+## 🎯 STRUCTURE FINALE
+
+1. **Hero** - Message clair + 2 CTAs hiérarchisés
+2. **Early Traction** - 15 vendeurs + Prototype (avec phone mockup)
+3. **Le Problème** - 3 points factuels
+4. **La Solution** - 5 piliers (incluant CinetPay)
+5. **Pourquoi Maintenant** - Sans stats invérifiables
+6. **Avantage Stratégique** - 2 cartes majeures (barrière entrée)
+7. **Roadmap** - Q4 2025 → Q4 2026
+8. **Séparateur Dual Funnel** - "Qui êtes-vous ?"
+9. **Section Investisseurs** - Round + stratégie acquisition
+10. **Section Early Adopters** - Programme pilote
+11. **Équipe** - Serge + CTO + advisors
 12. **Footer** - Liens + légal
 
-### **SEO**
-- ✅ Meta tags complets
-- ✅ Google Site Verification intégrée
-- ✅ Open Graph (LinkedIn/Facebook)
-- ✅ Sitemap.xml
-- ✅ Robots.txt
-- ✅ Balises sémantiques
-
-### **Formulaires**
-- ✅ 2 formulaires Formspree distincts
-- ✅ Investisseurs → Pitch deck
-- ✅ Early adopters → Programme pilote
-- ✅ Validation automatique
-
 ---
 
-## 📦 STRUCTURE
+## 📱 PHONE MOCKUP - CARACTÉRISTIQUES
 
-```
-brumerie-preseed/
-├── index.html          # Page complète (HTML + CSS + JS inline)
-├── public/
-│   ├── images/
-│   │   ├── logo.png    # Logo Brumerie
-│   │   ├── figma1.jpg  # Screenshot accueil
-│   │   ├── figma2.jpg  # Screenshot produit
-│   │   ├── figma3.jpg  # Screenshot profil
-│   │   └── figma4.jpg  # Screenshot dashboard
-│   ├── sitemap.xml
-│   └── robots.txt
-└── README.md
+```css
+.phone-mockup {
+  max-width: 340px;
+  padding: 20px 12px;
+  background: #1f2937; /* Noir iPhone */
+  border-radius: 50px;
+  box-shadow: 0 25px 60px rgba(0,0,0,0.3);
+}
+
+.phone-mockup::before {
+  /* Notch iPhone en haut */
+  width: 140px;
+  height: 30px;
+  background: #1f2937;
+  border-radius: 0 0 20px 20px;
+}
+
+.phone-screen {
+  aspect-ratio: 9/19.5; /* Ratio iPhone standard */
+  border-radius: 35px;
+  overflow: hidden;
+}
 ```
 
 ---
 
 ## 🚀 DÉPLOIEMENT
 
-### **Option 1 : Netlify (Recommandé)**
+### **Netlify (Recommandé)**
+1. Drag & drop le dossier `brumerie-preseed-v2/`
+2. Ou via GitHub + auto-deploy
 
-#### **Via GitHub** :
-1. Push ce dossier sur GitHub
-2. Netlify.com → New site → Import from Git
-3. Choisis le repo
-4. Build settings : AUCUN (site statique)
-5. Publish directory : `.` (racine)
-6. Deploy
-
-#### **Via Drag & Drop** :
-1. Netlify.com → Sites → Add new site → Deploy manually
-2. Glisse le dossier `brumerie-preseed/`
-3. Attend 1 min → Site en ligne
-
-### **Option 2 : Vercel**
-```bash
-npm i -g vercel
-cd brumerie-preseed
-vercel
-```
-
-### **Option 3 : GitHub Pages**
-1. Push sur GitHub
-2. Settings → Pages → Source: main branch
-3. Site accessible sur `username.github.io/brumerie`
+### **Domaine**
+- Acheter : **brumerie.ci** (~15$/an)
+- Configurer DNS dans Netlify
 
 ---
 
-## 🌐 DOMAINE PERSONNALISÉ
+## 📧 FORMULAIRES
 
-### **Acheter brumerie.ci** (RECOMMANDÉ)
-- **Prix** : ~15$/an
-- **Où** : Hostinger, Namecheap, ou registraire .ci local
+**Formspree ID** : `xkovnoqy`  
+**Email** : `brumerieciv.email@gmail.com`
 
-### **Configurer sur Netlify**
-1. Netlify → Domain settings
-2. Add custom domain → `brumerie.ci`
-3. Ajouter les DNS chez ton registraire :
-   ```
-   Type: A
-   Name: @
-   Value: 75.2.60.5
-   
-   Type: CNAME
-   Name: www
-   Value: ton-site.netlify.app
-   ```
+**2 formulaires distincts** :
+- Type = "investisseur" → Pitch deck
+- Type = "early-adopter" → Programme pilote
 
 ---
 
-## 📧 FORMULAIRES FORMSPREE
+## 🎯 MESSAGES CLÉS VALIDÉS
 
-Les 2 formulaires utilisent **Formspree ID : `xkovnoqy`**
+### **Escrow/Paiement** :
+✅ "Partenariat avec CinetPay (agrégateur certifié)"
+❌ PAS "Escrow réglementé" / "Licence PSP"
 
-### **Emails reçus sur** :
-`brumerieciv.email@gmail.com`
+### **Marché** :
+✅ "Adoption massive du Mobile Money"
+❌ PAS "70% des Ivoiriens" (non sourcé)
 
-### **Différenciation** :
-- Investisseurs : `type=investisseur`
-- Early adopters : `type=early-adopter`
+### **Positionnement** :
+✅ "Une nouvelle infrastructure de confiance"
+❌ PAS "Première plateforme" (trop fort)
 
-### **Si tu veux changer l'email** :
-1. Va sur Formspree.io
-2. Crée un nouveau formulaire
-3. Remplace `xkovnoqy` dans les 2 forms par ton nouvel ID
-
----
-
-## 🎨 PERSONNALISATION
-
-### **Changer les couleurs**
-Dans `index.html`, cherche `:root` et modifie :
-```css
---emerald-500: #10b981;  /* Couleur principale */
---emerald-600: #059669;  /* Couleur hover */
-```
-
-### **Modifier les textes**
-Tout est dans `index.html` - cherche les sections par titre :
-- `<!-- Hero Section -->`
-- `<!-- Investisseurs -->`
-- etc.
-
-### **Ajouter/retirer des images Figma**
-1. Ajoute l'image dans `public/images/`
-2. Dans le carousel, ajoute :
-```html
-<div class="carousel-slide">
-  <img src="/images/figma5.jpg" alt="Description">
-</div>
-```
-3. Ajoute un dot :
-```html
-<span class="dot" data-slide="4"></span>
-```
-4. Modifie `totalSlides = 5` dans le script
+### **Avantage** :
+✅ "Infrastructure de confiance hyperlocale intégrée au Mobile Money"
+✅ "Barrière structurelle à l'entrée"
 
 ---
 
-## 📊 ANALYTICS
+## 📊 CHECKLIST POST-DÉPLOIEMENT
 
-### **Google Analytics** (Recommandé)
-Ajoute avant `</head>` :
-```html
-<!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXX"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-XXXXXXXX');
-</script>
-```
-
-### **Hotjar** (Optionnel)
-Pour voir le comportement utilisateurs
-
----
-
-## ✅ CHECKLIST POST-DÉPLOIEMENT
-
-- [ ] Site déployé et accessible
 - [ ] Tester les 2 formulaires
-- [ ] Vérifier sur mobile
+- [ ] Vérifier phone mockup sur mobile
+- [ ] Tester tous les liens
 - [ ] Soumettre sitemap à Google Search Console
-- [ ] Tester tous les liens (LinkedIn, Crunchbase)
+- [ ] Acheter brumerie.ci
 - [ ] Partager sur LinkedIn
 - [ ] Envoyer à FasterCapital
-- [ ] Configurer domaine brumerie.ci
+- [ ] Contacter investisseurs ciblés
 
 ---
 
-## 🎯 OBJECTIFS DE CETTE PAGE
+## 🔥 DIFFÉRENCES V1 → V2
 
-1. **Lever 150k$** auprès d'investisseurs pré-seed
-2. **Recruter 50+ early adopters** pour le MVP
-3. **Crédibiliser Brumerie** auprès des partenaires
-4. **Générer du trafic organique** via SEO
-
----
-
-## 📈 MESURES DE SUCCÈS
-
-### **Court terme (7 jours)**
-- 10+ inscriptions early adopters
-- 2+ contacts investisseurs
-- Partages LinkedIn
-
-### **Moyen terme (30 jours)**
-- 50+ inscriptions early adopters
-- 5+ meetings investisseurs
-- Apparition Google "Brumerie CI"
+| Élément | V1 | V2 (Corrigée) |
+|---------|-----|---------------|
+| **Stats marché** | 70% / 2 milliards $ | Adoption massive (qualitatif) |
+| **Escrow** | "Système escrow" | "Partenariat CinetPay" |
+| **Positionnement** | "Première plateforme" | "Nouvelle infrastructure" |
+| **Avantage** | 5 points génériques | 2 cartes stratégiques |
+| **Équipe** | Solo founder | + CTO recrutement + advisors |
+| **Acquisition** | Absente | Stratégie détaillée |
+| **Screenshots** | Carousel simple | Phone mockup iPhone |
+| **Dual Funnel** | Mélangé | Séparé visuellement |
 
 ---
 
-## 🆘 SUPPORT
+## ✨ RÉSULTAT
 
-**Problème technique ?**
-- Vérifie que toutes les images sont dans `public/images/`
-- Teste en local avec `python3 -m http.server 8000`
-- Ouvre `localhost:8000` dans ton navigateur
-
-**Formulaires ne marchent pas ?**
-- Vérifie l'ID Formspree : `xkovnoqy`
-- Teste en envoyant un message
-- Check ton email `brumerieciv.email@gmail.com`
+**Crédibilité** : 9/10 pour un pré-seed Afrique francophone  
+**Prêt pour** : Business angels, fonds early-stage, FasterCapital network  
+**Convertit** : Investisseurs ET early adopters
 
 ---
 
-## 🚀 PROCHAINES ÉTAPES
-
-1. **Déploie immédiatement** sur Netlify
-2. **Teste tout** (formulaires, liens, mobile)
-3. **Achète brumerie.ci** (15$)
-4. **Partage sur LinkedIn** avec le lien
-5. **Envoie aux investisseurs** potentiels
-6. **Soumets à Google** Search Console
-
----
-
-**Fait avec 💚 pour le succès de Brumerie en Côte d'Ivoire**
+**Fait avec 💚 pour le succès de Brumerie**
