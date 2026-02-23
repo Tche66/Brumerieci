@@ -14,6 +14,53 @@
   <meta name="author" content="Brumerie" />
   <meta name="robots" content="index, follow" />
   
+    /* Figma Screenshots Carousel */
+    .figma-carousel {
+      position: relative;
+      max-width: 900px;
+      margin: 0 auto;
+      overflow: hidden;
+      border-radius: 1rem;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+    }
+    
+    .carousel-track {
+      display: flex;
+      transition: transform 0.5s ease;
+    }
+    
+    .carousel-slide {
+      min-width: 100%;
+      flex-shrink: 0;
+    }
+    
+    .carousel-slide img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    
+    .carousel-dots {
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+      margin-top: 1.5rem;
+    }
+    
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--gray-300);
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+    
+    .dot.active {
+      background: var(--emerald-600);
+      width: 24px;
+      border-radius: 5px;
+    }
   <!-- Open Graph Meta Tags -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Brumerie - Le commerce local sécurisé arrive à Abidjan" />
@@ -239,89 +286,34 @@
       font-weight: 500;
     }
     
-    /* Section générique */
-    section {
-      padding: 5rem 0;
-    }
-    
-    .section-header {
-      text-align: center;
-      margin-bottom: 3rem;
-    }
-    
-    .section-badge {
-      display: inline-block;
-      padding: 0.5rem 1rem;
-      background: var(--emerald-50);
-      color: var(--emerald-700);
-      border-radius: 999px;
-      font-size: 0.85rem;
-      font-weight: 600;
-      margin-bottom: 1rem;
-    }
-    
-    .section-title {
-      font-size: 2.5rem;
-      font-weight: 800;
-      color: var(--gray-900);
-      margin-bottom: 1rem;
-    }
-    
-    .section-description {
-      font-size: 1.1rem;
-      color: var(--gray-600);
-      max-width: 700px;
-      margin: 0 auto;
-    }
-    
-    /* Figma Screenshots Carousel */
-    .figma-carousel {
-      position: relative;
-      max-width: 900px;
-      margin: 0 auto;
-      overflow: hidden;
-      border-radius: 1rem;
-      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
-    }
-    
-    .carousel-track {
-      display: flex;
-      transition: transform 0.5s ease;
-    }
-    
-    .carousel-slide {
+        .carousel-slide {
       min-width: 100%;
       flex-shrink: 0;
+      /* On centre l'image horizontalement */
+      display: flex; 
+      justify-content: center;
+      align-items: center;
+      background: #f8fafc; /* Optionnel : un fond léger pour faire ressortir le prototype */
+      padding: 2rem 0;
     }
     
     .carousel-slide img {
-      width: 100%;
+      /* C'est ici que la magie opère */
+      width: auto;           /* Ne force pas la largeur à 100% */
+      max-width: 280px;      /* Largeur typique d'un écran mobile sur desktop */
       height: auto;
       display: block;
+      border-radius: 2rem;   /* Arrondi prononcé pour l'effet smartphone */
+      border: 8px solid #1a1a1a; /* Simule le châssis d'un téléphone */
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
     }
-    
-    .carousel-dots {
-      display: flex;
-      justify-content: center;
-      gap: 0.5rem;
-      margin-top: 1.5rem;
+
+    /* Adaptation pour les petits écrans (mobiles) */
+    @media (max-width: 480px) {
+      .carousel-slide img {
+        max-width: 80%; /* Sur un vrai téléphone, on laisse un peu de marge */
     }
-    
-    .dot {
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-      background: var(--gray-300);
-      cursor: pointer;
-      transition: all 0.3s;
-    }
-    
-    .dot.active {
-      background: var(--emerald-600);
-      width: 24px;
-      border-radius: 5px;
-    }
-    
+
     /* Problem Section */
     .problem-grid {
       display: grid;
