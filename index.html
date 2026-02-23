@@ -294,33 +294,43 @@
       border-radius: 1rem;
       box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
     }
-
+    
+    .carousel-track {
+      display: flex;
+      transition: transform 0.5s ease;
+    }
+    
     .carousel-slide {
       min-width: 100%;
       flex-shrink: 0;
-      /* On centre l'image horizontalement */
-      display: flex; 
-      justify-content: center;
-      align-items: center;
-      background: #f8fafc; /* Optionnel : un fond léger pour faire ressortir le prototype */
-      padding: 2rem 0;
     }
     
     .carousel-slide img {
-      /* C'est ici que la magie opère */
-      width: auto;           /* Ne force pas la largeur à 100% */
-      max-width: 280px;      /* Largeur typique d'un écran mobile sur desktop */
+      width: 100%;
       height: auto;
       display: block;
-      border-radius: 2rem;   /* Arrondi prononcé pour l'effet smartphone */
-      border: 8px solid #1a1a1a; /* Simule le châssis d'un téléphone */
-      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
     }
-
-    /* Adaptation pour les petits écrans (mobiles) */
-    @media (max-width: 480px) {
-      .carousel-slide img {
-        max-width: 80%; /* Sur un vrai téléphone, on laisse un peu de marge */
+    
+    .carousel-dots {
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+      margin-top: 1.5rem;
+    }
+    
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--gray-300);
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+    
+    .dot.active {
+      background: var(--emerald-600);
+      width: 24px;
+      border-radius: 5px;
     }
 
     /* Problem Section */
