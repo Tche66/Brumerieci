@@ -29,35 +29,31 @@
       transition: transform 0.5s ease;
     }
     
-        .carousel-slide {
+    .carousel-slide {
       min-width: 100%;
       flex-shrink: 0;
-      /* On centre l'image horizontalement dans la slide */
       display: flex;
       justify-content: center;
       align-items: center;
       padding: 2rem 0;
-      background: #fdfdfd; /* Un fond très léger pour faire ressortir le prototype */
+      background: #fdfdfd; 
     }
     
     .carousel-slide img {
-      /* On définit une largeur réaliste pour un smartphone */
       width: auto;
-      max-width: 320px; /* Taille idéale pour simuler un écran mobile */
+      max-width: 320px;
       height: auto;
       display: block;
-      
-      /* Look "Premium" : Bordure arrondie et ombre portée */
+     
       border-radius: 2rem; 
-      border: 10px solid #1a1a1a; /* Simule le cadre d'un téléphone */
+      border: 10px solid #1a1a1a; 
       box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
     }
 
-    /* Ajustement pour les petits écrans (téléphones) */
     @media (max-width: 480px) {
       .carousel-slide img {
-        max-width: 80%; /* Prend moins de place sur les petits écrans */
-        border-width: 6px; /* Bordure plus fine sur mobile */
+        max-width: 80%; 
+        border-width: 6px; 
     }
 
   <!-- Open Graph Meta Tags -->
